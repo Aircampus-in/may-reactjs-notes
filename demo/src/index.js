@@ -5,7 +5,8 @@ import "./index.css";
 // import { Parent } from "./Parent";
 import reportWebVitals from "./reportWebVitals";
 // import { Greeting } from "./components/Greeting";
-import { Names } from "./components/Names";
+// import { Names } from "./components/Names";
+import { LifeCycle } from "./components/LifeCycle";
 
 const root = ReactDOM.createRoot(document.querySelector(".index"));
 root.render(
@@ -16,7 +17,11 @@ root.render(
     </App> */}
     {/* <Parent /> */}
     {/* <Greeting /> */}
-    <Names />
+    {/* <Names name="vasanth">
+      <h1>Vasanth</h1>
+      <p>this is a chidren</p>
+    </Names> */}
+    <LifeCycle />
   </React.StrictMode>
 );
 
