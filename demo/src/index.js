@@ -6,7 +6,9 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 // import { Greeting } from "./components/Greeting";
 // import { Names } from "./components/Names";
-import { LifeCycle } from "./components/LifeCycle";
+// import { LifeCycle } from "./components/LifeCycle";
+import { Parent } from "./components/Parent";
+// import { InstaMain } from "./components/InstaMain";
 
 const root = ReactDOM.createRoot(document.querySelector(".index"));
 root.render(
@@ -21,7 +23,9 @@ root.render(
       <h1>Vasanth</h1>
       <p>this is a chidren</p>
     </Names> */}
-    <LifeCycle />
+    {/* <LifeCycle /> */}
+    {/* <InstaMain /> */}
+    <Parent />
   </React.StrictMode>
 );
 
