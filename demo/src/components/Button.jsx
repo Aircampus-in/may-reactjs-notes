@@ -25,7 +25,7 @@ export class Button extends Component {
     }
   };
 
-  increment = () => {
+  increment = async () => {
     // asynchronous process
     // this.setState(
     //   {
@@ -36,29 +36,43 @@ export class Button extends Component {
     //     console.log(this.state.count);
     //   }
     // );
-    this.setState((prev) => ({
-      count: prev.count + 1,
-    }));
+    // this.setState((prev) => ({
+    //   count: prev.count + 1,
+    // }));
+    // this.setState((prevState) => {
+    //   console.log(prevState);
+    //   return { count: prevState.count + 1 };
+    // });
+    // this.setState((prev) => ({
+    //   count: prev.count + 1,
+    // }));
     this.setState((prevState) => {
-      console.log(prevState);
-      return { count: prevState.count + 1 };
+      return {
+        count: prevState.count + 1,
+        text: "dhoni",
+      };
     });
-    this.setState((prev) => ({
-      count: prev.count + 1,
-    }));
+    this.setState((prevState) => {
+      console.log("between", prevState.count, prevState.text);
+      return {
+        count: prevState.count + 1,
+        text: prevState.text + "vasanth",
+      };
+    });
   };
 
   render() {
     let { text, btnClass } = this.props;
     // console.log(this.props);
-    console.log("child");
+    // console.log("child");
     return (
       <div>
         <h1>{this.state.count}</h1>
-        <button onClick={this.props.handleBtnApp} className={btnClass}>
+        {this.state.text}
+        {/* <button onClick={this.props.handleBtnApp} className={btnClass}>
           {text}
-        </button>
-        <button onClick={this.increment}>child</button>
+        </button> */}
+        <button onClick={this.increment}>increment</button>
       </div>
     );
   }

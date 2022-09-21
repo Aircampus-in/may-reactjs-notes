@@ -8,6 +8,8 @@ import reportWebVitals from "./reportWebVitals";
 // import { Names } from "./components/Names";
 // import { LifeCycle } from "./components/LifeCycle";
 import { Parent } from "./components/Parent";
+import { Form } from "./components/Form";
+import { Button } from "./components/Button";
 // import { InstaMain } from "./components/InstaMain";
 
 const root = ReactDOM.createRoot(document.querySelector(".index"));
@@ -25,7 +27,9 @@ root.render(
     </Names> */}
     {/* <LifeCycle /> */}
     {/* <InstaMain /> */}
-    <Parent />
+    {/* <Parent /> */}
+    <Form />
+    {/* <Button text="increment" /> */}
   </React.StrictMode>
 );
 
