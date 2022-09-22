@@ -10,6 +10,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Parent } from "./components/Parent";
 import { Form } from "./components/Form";
 import { Button } from "./components/Button";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 // import { InstaMain } from "./components/InstaMain";
 
 const root = ReactDOM.createRoot(document.querySelector(".index"));
@@ -28,7 +29,8 @@ root.render(
     {/* <LifeCycle /> */}
     {/* <InstaMain /> */}
     {/* <Parent /> */}
-    <Form />
+    {/* <Form /> */}
+    <ErrorBoundary />
     {/* <Button text="increment" /> */}
   </React.StrictMode>
 );
