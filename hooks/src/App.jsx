@@ -1,5 +1,5 @@
 // import { CountClass } from "./components/CountClass";
-// import { CounterHooks } from "./components/CounterHooks";
+import { CounterHooks } from "./components/CounterHooks";
 // import { CountHooks } from "./components/CountHooks";
 // import { StateWithArray } from "./components/StateWithArray";
 // import { StateWithObject } from "./components/StateWithObject";
@@ -23,7 +23,7 @@ export function App() {
     <>
       {/* <CountClass />
       <CountHooks /> */}
-      {/* <CounterHooks /> */}
+      <CounterHooks />
       {/* <StateWithObject /> */}
       {/* <StateWithArray /> */}
       {/* <TitleChangeClass /> */}

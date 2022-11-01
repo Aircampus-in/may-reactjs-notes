@@ -4,7 +4,7 @@ import "./index.css";
 // import { App } from "./App";
 // import { Parent } from "./Parent";
 import reportWebVitals from "./reportWebVitals";
-// import { Greeting } from "./components/Greeting";
+import { Greeting } from "./components/Greeting";
 // import { Names } from "./components/Names";
 // import { LifeCycle } from "./components/LifeCycle";
 import { Parent } from "./components/Parent";
@@ -21,7 +21,7 @@ root.render(
       <h2>head tag inside app</h2>
     </App> */}
     {/* <Parent /> */}
-    {/* <Greeting /> */}
+    <Greeting />
     {/* <Names name="vasanth">
       <h1>Vasanth</h1>
       <p>this is a chidren</p>
@@ -30,7 +30,7 @@ root.render(
     {/* <InstaMain /> */}
     {/* <Parent /> */}
     {/* <Form /> */}
-    <ErrorBoundary />
+    {/* <ErrorBoundary /> */}
     {/* <Button text="increment" /> */}
   </React.StrictMode>
 );
