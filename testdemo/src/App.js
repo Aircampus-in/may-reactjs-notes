@@ -1,11 +1,11 @@
 import { Counter } from "./components/counter/Counter";
-import { Greet } from "./components/greet/Greet";
+// import { Greet } from "./components/greet/Greet";
 
 function App() {
   return (
     <div className="App">
       <Counter />
-      <Greet />
+      {/* <Greet /> */}
     </div>
   );
 }
