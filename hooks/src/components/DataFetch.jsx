@@ -10,11 +10,20 @@ export function DataFetch() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
-      //   console.log(response.data);
-      setPosts([posts, ...response.data]);
-      setFilteredData([posts, ...response.data]);
-    });
+    axios
+      .get("https://crunchbase-crunchbase-v1.p.rapidapi.com/autocompletes", {
+        params: { query: "<REQUIRED>" },
+        headers: {
+          "X-RapidAPI-Key":
+            "55820fc541mshacc656395cdf46ap18c213jsn82efe0edf61c",
+          "X-RapidAPI-Host": "crunchbase-crunchbase-v1.p.rapidapi.com",
+        },
+      })
+      .then((response) => {
+        console.log(response);
+        setPosts([posts, ...response.data]);
+        setFilteredData([posts, ...response.data]);
+      });
   }, []);
 
   //   useEffect(() => {

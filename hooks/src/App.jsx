@@ -8,7 +8,7 @@ import { CounterHooks } from "./components/CounterHooks";
 // import Check from "./components/Check";
 // import { RefExample } from "./components/RefExample";
 import React, { useState } from "react";
-// import { DataFetch } from "./components/DataFetch";
+import { DataFetch } from "./components/DataFetch";
 import { ComponentA } from "./components/ComponentA";
 
 export const NameContext = React.createContext();
@@ -23,7 +23,7 @@ export function App() {
     <>
       {/* <CountClass />
       <CountHooks /> */}
-      <CounterHooks />
+      {/* <CounterHooks /> */}
       {/* <StateWithObject /> */}
       {/* <StateWithArray /> */}
       {/* <TitleChangeClass /> */}
@@ -33,13 +33,13 @@ export function App() {
       {/* click = {valid}
       </button> */}
       {/* <RefExample /> */}
-      {/* <DataFetch /> */}
-      <NameContext.Provider value={name}>
+      <DataFetch />
+      {/* <NameContext.Provider value={name}>
         <AgeContext.Provider value={age}>
           <ComponentA />
         </AgeContext.Provider>
-      </NameContext.Provider>
-      <p>dadasda</p>
+      </NameContext.Provider> */}
+      {/* <p>dadasda</p> */}
     </>
   );
 }

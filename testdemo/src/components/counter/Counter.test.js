@@ -33,7 +33,9 @@ describe("Counter Component", () => {
     const termsElement = screen.getByRole("checkbox");
     expect(termsElement).toBeInTheDocument();
 
-    const submitBtnElement = screen.getByRole("button");
+    const submitBtnElement = screen.getByRole("button", {
+      name: "submit",
+    });
     expect(submitBtnElement).toBeInTheDocument();
 
     // getByLabelText
